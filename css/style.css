@@ -2712,7 +2712,7 @@ revievs
   background-color: red;
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  border-radius: none;
   background-size: cover;
   background-position: top;
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1) !important;
@@ -2746,8 +2746,8 @@ revievs
   background-image: url(../img/faces/customers/7.jpg);
 }
 .mil-revi-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  -webkit-box-shadow: inset 0 0 0 4px #373b95;
-          box-shadow: inset 0 0 0 4px #373b95;
+  -webkit-box-shadow: inset 0 0 0 4px #fff;
+          box-shadow: inset 0 0 0 4px #fff;
 }
 
 .mil-quote-icon {
