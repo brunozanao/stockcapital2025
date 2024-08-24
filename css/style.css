@@ -2804,7 +2804,7 @@ revievs
 }
 .mil-slider-nav.mil-reviews-nav {
   position: absolute;
-  top: 160px;
+  top: 0px;
   left: 0;
   width: 100%;
   -webkit-box-pack: justify;
