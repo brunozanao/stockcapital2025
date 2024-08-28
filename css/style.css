@@ -2670,7 +2670,7 @@ revievs
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
+          justify-content: space-between;
 }
 @media screen and (max-width: 992px) {
   .mil-revi-pagination {
@@ -2710,8 +2710,8 @@ revievs
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot {
   background-color: red;
-  width: 90px;
-  height: 90px;
+  width: 140px;
+  height: 140px;
   border-radius: none;
   background-size: cover;
   background-position: top;
