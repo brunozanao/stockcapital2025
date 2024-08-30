@@ -2710,8 +2710,8 @@ revievs
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot {
   background-color: red;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   border-radius: none;
   background-size: cover;
   background-position: top;
@@ -2731,22 +2731,22 @@ revievs
   background-image: url(../img/faces/customers/gif2.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-3 {
-  background-image: url(../img/faces/customers/gif4.gif);
+  background-image: url(../img/faces/customers/gif3.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-4 {
-  background-image: url(../img/faces/customers/gif6.gif);
+  background-image: url(../img/faces/customers/gif4.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-5 {
-  background-image: url(../img/faces/customers/gif7.gif);
+  background-image: url(../img/faces/customers/gif5.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-6 {
-  background-image: url(../img/faces/customers/gif8.gif);
+  background-image: url(../img/faces/customers/gif6.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-7 {
-  background-image: url(../img/faces/customers/gif9.gif);
+  background-image: url(../img/faces/customers/gif7.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-8 {
-  background-image: url(../img/faces/customers/gif10.gif);
+  background-image: url(../img/faces/customers/gif8.gif);
 }
 .mil-revi-pagination .swiper-pagination-bullet .mil-custom-dot.mil-slide-9 {
   background-image: url(../img/faces/customers/gif9.gif);
