@@ -1188,13 +1188,13 @@ frame
 
 ------------------------------------------- */
 .mil-logo {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 500;
   line-height: 100%;
 }
 @media screen and (max-width: 992px) {
   .mil-logo {
-    font-size: 36px;
+    font-size: 26px;
   }
 }
 
