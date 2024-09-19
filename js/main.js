@@ -18,6 +18,20 @@ $(function () {
     swup
 
     ***************************/
+
+    const menuBtn = document.querySelector('.mil-menu-btn');
+const menuContent = document.querySelector('.mil-menu-content');
+
+menuBtn.addEventListener('click', () => {
+  menuContent.classList.toggle('open');
+});
+
+document.addEventListener('click', (e) => {
+  if (!menuContent.contains(e.target) && !menuBtn.contains(e.target)) {
+    menuContent.classList.remove('open');
+  }
+});
+
     const options = {
         containers: ['#swupMain', '#swupMenu'],
         animateHistoryBrowsing: true,
