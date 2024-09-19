@@ -1380,13 +1380,13 @@ menu
 .mil-menu-frame .container {
   pointer-events: none;
 }
-.mil-menu-frame .mil-frame-top {
+/* .mil-menu-frame .mil-frame-top {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 50px 60px;
-}
+} */
 @media screen and (max-width: 1200px) {
   .mil-menu-frame .mil-frame-top {
     display: none;
