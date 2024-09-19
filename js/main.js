@@ -18,20 +18,6 @@ $(function () {
     swup
 
     ***************************/
-
-    const menuBtn = document.querySelector('.mil-menu-btn');
-const menuContent = document.querySelector('.mil-menu-content');
-
-menuBtn.addEventListener('click', () => {
-  menuContent.classList.toggle('open');
-});
-
-document.addEventListener('click', (e) => {
-  if (!menuContent.contains(e.target) && !menuBtn.contains(e.target)) {
-    menuContent.classList.remove('open');
-  }
-});
-
     const options = {
         containers: ['#swupMain', '#swupMenu'],
         animateHistoryBrowsing: true,
@@ -382,6 +368,14 @@ document.addEventListener('click', (e) => {
         $('.mil-menu-btn').toggleClass('mil-active');
         $('.mil-menu').toggleClass('mil-active');
         $('.mil-menu-frame').toggleClass('mil-active');
+    });
+
+    document.addEventListener('click', function(event) {
+        if (!event.target.classList.contains('mil-menu-btn') && !event.target.classList.contains('mil-menu-content')) {
+            $('.mil-menu-btn').removeClass('mil-active');
+            $('.mil-menu').removeClass('mil-active');
+            $('.mil-menu-frame').removeClass('mil-active');
+        }
     });
     /***************************
 
