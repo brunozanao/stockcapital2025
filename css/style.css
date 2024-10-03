@@ -2518,8 +2518,8 @@ team
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
-  transition: transform 0.3s ease; /* Smoother hover transition */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease;  */
 }
 
 /* .mil-team-card:after {
