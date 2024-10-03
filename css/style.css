@@ -2513,7 +2513,7 @@ team
   position: relative;
   overflow: hidden;
   padding-bottom: 100%; /* Maintain aspect ratio */
-  background-color: #fff;
+  background-color: none;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
