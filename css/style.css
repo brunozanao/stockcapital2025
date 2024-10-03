@@ -1221,11 +1221,6 @@ frame
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-/* Adicione uma classe para ocultar o menu ao rolar o mouse */
-.mil-frame.hide {
-  top: -60px; /* Defina a posição do menu para fora da tela */
-}
 @media screen and (max-width: 1200px) {
   .mil-frame {
     padding: 30px;
