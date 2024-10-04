@@ -2528,7 +2528,7 @@ team
   transition: transform 0.3s ease;  */
 }
 
-/* .mil-team-card:after {
+.mil-team-card:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -2538,7 +2538,7 @@ team
   background-color: #373b95;
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
-} */
+}
 
 .mil-team-card-container {
   height: 100%;
@@ -2590,7 +2590,7 @@ team
 .mil-team-card .mil-description {
   opacity: 0;
   text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: rgba(0, 0, 0, 0.514);
   position: absolute;
   top: 0;
   left: 0;
