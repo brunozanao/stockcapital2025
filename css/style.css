@@ -2652,7 +2652,7 @@ team
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.514);
-  clip-path: polygon(50% 5%, 95% 50%, 50% 95%, 5% 50%);
+  clip-path: polygon(50% 3%, 97% 50%, 50% 97%, 3% 50%);
 }
 
 .mil-team-card .mil-description .mil-secrc-text {
