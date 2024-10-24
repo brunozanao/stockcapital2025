@@ -2613,11 +2613,20 @@ team
   justify-content: stretch; /* Garante que as colunas mantenham a altura uniforme */
 }
 
+
+.move-up-desktop {
+  margin-top: -150px;
+}
+
 @media screen and (max-width: 992px) {
   .mil-team-card.mil-offset-card {
     -webkit-transform: none;
             transform: none;
   }
+  
+  .move-up-desktop {
+    margin-top: 0px;
+}
 }
 .mil-team-card .mil-description {
   opacity: 0;
