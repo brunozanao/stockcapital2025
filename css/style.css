@@ -2681,7 +2681,7 @@ team
   height: 100%;
   background-color: rgba(0, 0, 0, 0.514);
   clip-path: polygon(50% 2%, 98% 50%, 50% 98%, 2% 50%);
-  filter: blur(250px); /* Ajuste a intensidade do blur para suavizar as bordas */
+  filter: blur(200px); /* Ajuste a intensidade do blur para suavizar as bordas */
 }
 
 .mil-team-card .mil-description .mil-secrc-text {
