@@ -602,6 +602,7 @@ button
 }
 .mil-button span {
   white-space: nowrap;
+  color: #fff;
 }
 .mil-button svg {
   margin-left: 30px;
