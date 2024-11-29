@@ -405,7 +405,7 @@ a {
 }
 
 .mil-light-soft {
-  color: #fff;
+  color: #fff !important;
 }
 
 .mil-dark-soft {
