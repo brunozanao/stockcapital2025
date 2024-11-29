@@ -2458,7 +2458,7 @@ services
 .mil-service-card-sm {
   position: relative;
   display: block;
-  padding: 60px 30px;
+  padding: 80px 30px;
 }
 .mil-service-card-sm p {
   opacity: 0;
