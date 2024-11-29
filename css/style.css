@@ -299,7 +299,8 @@ h5,
 
 h6,
 .mil-h6 {
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins";
+  color: #1a1a1a;
   font-size: 18px;
   line-height: 150%;
 }
