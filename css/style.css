@@ -632,6 +632,7 @@ button
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-button span {
+  font-family: 'roboto', condensed;
   font-size: 14px;
   white-space: nowrap;
   color: #fff;
