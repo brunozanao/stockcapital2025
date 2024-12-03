@@ -287,7 +287,8 @@ h4,
 
 h5,
 .mil-h5 {
-  font-size: 30px;
+  font-family: "Roboto", condensed !important;
+  font-size: 32px;
   line-height: 150%;
 }
 @media screen and (max-width: 768px) {
