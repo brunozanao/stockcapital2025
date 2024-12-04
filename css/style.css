@@ -3648,7 +3648,8 @@ accordion
           transform: translateY(-2px);
 }
 .mil-accordion-group .mil-accordion-menu .mil-accordion-head {
-  font-size: 12px;
+  font-family: "Roboto", condensed;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 500;
