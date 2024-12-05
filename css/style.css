@@ -2831,6 +2831,14 @@ team
   }
 }
 
+.img-full {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
+  display: block; /* Remove qualquer espaçamento extra causado por elementos inline */
+}
+
+
 /* -------------------------------------------
 
 social icons
