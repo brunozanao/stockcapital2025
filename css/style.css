@@ -2817,6 +2817,20 @@ team
   left: -22.5%;
 }
 
+.video-full {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  max-height: 100vh; /* Limita a altura ao tamanho da tela */
+  object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorção */
+}
+
+@media (max-width: 768px) {
+  .video-full {
+      width: 100%;
+      height: auto;
+  }
+}
+
 /* -------------------------------------------
 
 social icons
