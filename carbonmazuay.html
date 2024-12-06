@@ -384,12 +384,12 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="mil-price-number mil-mb-30">
-                                    <img src="img/faces/1carbon.png" alt="Image" class="img-full">
-                                </div>
+                                    <img src="img/faces/1carbon.png" alt="Image" class="img-full" onclick="expandImage(this)">
+                                </div>                                
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-price-number mil-mb-30">
-                                    <img src="img/faces/2carbon.png" alt="Image" class="img-full">
+                                    <img src="img/faces/2carbon.png" alt="Image" class="img-full" onclick="expandImage(this)">
                                 </div>
                             </div>
                         </div>
@@ -397,12 +397,12 @@
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="mil-price-number mil-mb-30">
-                                    <img src="img/faces/3carbon.png" alt="Image" class="img-full">
+                                    <img src="img/faces/3carbon.png" alt="Image" class="img-full" onclick="expandImage(this)">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-price-number mil-mb-30">
-                                    <img src="img/faces/4carbon.png" alt="Image" class="img-full">
+                                    <img src="img/faces/4carbon.png" alt="Image" class="img-full" onclick="expandImage(this)">
                                 </div>
                             </div>
                         </div>
@@ -641,6 +641,32 @@
     <script src="js/plugins/ScrollTo.min.js"></script>
     <!-- ashley js -->
     <script src="js/main.js"></script>
+
+    <script>
+        // Função para expandir a imagem
+        function expandImage(img) {
+            // Criando uma sobreposição para o fundo
+            var overlay = document.createElement('div');
+            overlay.id = 'overlay';
+            document.body.appendChild(overlay);
+    
+            // Criando a imagem expandida
+            var expandedImg = document.createElement('img');
+            expandedImg.id = 'expandedImg';
+            expandedImg.src = img.src;
+            document.body.appendChild(expandedImg);
+    
+            // Exibindo a imagem expandida
+            expandedImg.style.display = 'block';
+    
+            // Fechar a imagem quando a sobreposição for clicada
+            overlay.onclick = function() {
+                expandedImg.style.display = 'none';
+                overlay.style.display = 'none';
+            };
+        }
+    </script>
+    
 
 </body>
 
