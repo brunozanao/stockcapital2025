@@ -394,6 +394,14 @@ blockquote {
   z-index: 999;
 }
 
+/* Media query para dispositivos móveis */
+@media (max-width: 768px) {
+  #expandedImg {
+      width: 90%; /* A largura para dispositivos móveis será 90% da tela */
+      height: 300px;
+  }
+}
+
 
 .mil-bold {
   font-weight: 500;
