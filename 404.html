@@ -169,6 +169,101 @@
             </div>
         </div>
 
+        <div class="language-select-container">
+            <select id="language-select" class="language-select">
+                <option value="pt">PT</option>
+                <option value="en"selected>EN</option>
+            </select>
+        </div>
+
+        <style>
+            .language-select-container {
+                position: fixed;
+                top: 50px;
+                right: 100px;
+                z-index: 1000;
+            }
+
+            .language-select {
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                background-color: rgba(255, 255, 255, 0.9);
+                border: 1px solid #e0e0e0;
+                border-radius: 20px;
+                padding: 5px 30px 5px 10px;
+                font-size: 14px;
+                color: #000000;
+                cursor: pointer;
+                outline: none;
+                background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+                background-repeat: no-repeat;
+                background-position: right 8px center;
+                transition: all 0.3s ease;
+            }
+
+            .language-select:hover {
+                background-color: rgba(240, 240, 240, 0.9);
+                border-color: #ccc;
+            }
+
+            .language-select:focus {
+                box-shadow: 0 0 5px #000;
+            }
+
+            @media (max-width: 1200px) {
+                .language-select-container {
+                    top: 30px;
+                    right: 80px;
+                    z-index: 1000;
+                }
+
+                .language-select {
+                    padding: 3px 25px 3px 8px;
+                    font-size: 12px;
+                    background-position: right 5px center;
+                }
+            }
+
+            /* Adicionando media query para dispositivos móveis */
+            @media (max-width: 768px) {
+                .language-select-container {
+                    top: 30px;
+                    right: 80px;
+                    z-index: 1000;
+                }
+
+                .language-select {
+                    padding: 3px 25px 3px 8px;
+                    font-size: 12px;
+                    background-position: right 5px center;
+                }
+            }
+
+            /* Opcional: ajustes para telas muito pequenas */
+            @media (max-width: 480px) {
+                .language-select-container {
+                    top: 35px;
+                    right: 80px;
+                }
+
+                .language-select {
+                    padding: 2px 20px 2px 6px;
+                    font-size: 11px;
+                    background-position: right 3px center;
+                }
+            }
+        </style>
+
+        <script>
+            document.getElementById('language-select').addEventListener('change', function () {
+                var selectedLanguage = this.value;
+                if (selectedLanguage === 'pt') {
+                    window.location.href = 'home-pt.html';
+                }
+            });
+        </script>
+
         <div class="mil-curtain"></div>
 
         <div class="mil-frame">
