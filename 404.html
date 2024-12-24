@@ -279,6 +279,9 @@
                 var currentPath = window.location.pathname;
                 var languageSelect = document.getElementById('language-select');
                 
+                // Default to 'en' for 404 page and any other page not explicitly specified
+                languageSelect.value = 'en';
+                
                 if (currentPath.includes('404.html')) {
                     languageSelect.value = 'en';
                 } else if (currentPath.includes('home-es.html')) {
