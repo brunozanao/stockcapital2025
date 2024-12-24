@@ -165,11 +165,12 @@
 
         <div class="language-select-container">
             <select id="language-select" class="language-select">
-                <option value="pt" selected>PT</option>
+                <option value="pt">PT</option>
                 <option value="en">EN</option>
+                <option value="es">ES</option>
             </select>
         </div>
-
+        
         <style>
             .language-select-container {
                 position: fixed;
@@ -177,7 +178,7 @@
                 right: 100px;
                 z-index: 1000;
             }
-
+        
             .language-select {
                 appearance: none;
                 -webkit-appearance: none;
@@ -195,52 +196,50 @@
                 background-position: right 8px center;
                 transition: all 0.3s ease;
             }
-
+        
             .language-select:hover {
                 background-color: rgba(240, 240, 240, 0.9);
                 border-color: #ccc;
             }
-
+        
             .language-select:focus {
                 box-shadow: 0 0 5px #000;
             }
-
+        
             @media (max-width: 1200px) {
                 .language-select-container {
                     top: 30px;
                     right: 80px;
                     z-index: 1000;
                 }
-
+        
                 .language-select {
                     padding: 3px 25px 3px 8px;
                     font-size: 12px;
                     background-position: right 5px center;
                 }
             }
-
-            /* Adicionando media query para dispositivos móveis */
+        
             @media (max-width: 768px) {
                 .language-select-container {
                     top: 30px;
                     right: 80px;
                     z-index: 1000;
                 }
-
+        
                 .language-select {
                     padding: 3px 25px 3px 8px;
                     font-size: 12px;
                     background-position: right 5px center;
                 }
             }
-
-            /* Opcional: ajustes para telas muito pequenas */
+        
             @media (max-width: 480px) {
                 .language-select-container {
                     top: 35px;
                     right: 80px;
                 }
-
+        
                 .language-select {
                     padding: 2px 20px 2px 6px;
                     font-size: 11px;
@@ -248,12 +247,38 @@
                 }
             }
         </style>
-
+        
         <script>
             document.getElementById('language-select').addEventListener('change', function () {
                 var selectedLanguage = this.value;
-                if (selectedLanguage === 'en') {
-                    window.location.href = 'https://www.stockcapital.com.br/';
+                var currentPath = window.location.pathname;
+                var baseUrl = 'https://www.stockcapital.com.br/';
+                
+                // Determine the base filename
+                var filename = currentPath.split('/').pop();
+                
+                // Map of language-specific filenames
+                var languageMap = {
+                    'pt': 'home-pt.html',
+                    'en': '404.html',
+                    'es': 'home-es.html'
+                };
+                
+                // Redirect to the appropriate language version
+                window.location.href = baseUrl + languageMap[selectedLanguage];
+            });
+        
+            // Set the correct option as selected based on current URL
+            document.addEventListener('DOMContentLoaded', function() {
+                var currentPath = window.location.pathname;
+                var languageSelect = document.getElementById('language-select');
+                
+                if (currentPath.includes('404.html')) {
+                    languageSelect.value = 'en';
+                } else if (currentPath.includes('home-es.html')) {
+                    languageSelect.value = 'es';
+                } else {
+                    languageSelect.value = 'pt';
                 }
             });
         </script>
