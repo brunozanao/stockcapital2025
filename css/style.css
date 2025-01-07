@@ -106,6 +106,33 @@ body {
   pointer-events: all;
 }
 
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px; /* Distância do botão em relação à parte inferior */
+  right: 20px; /* Distância do botão em relação à lateral direita */
+  z-index: 1000; /* Garante que o botão fique por cima de outros elementos */
+  background-color: #25d366;
+  width: 60px; /* Largura do botão */
+  height: 60px; /* Altura do botão */
+  border-radius: 50%; /* Faz o botão ficar redondo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.whatsapp-icon {
+  width: 40px; /* Largura do ícone */
+  height: 40px; /* Altura do ícone */
+}
+
+
+
 .mil-relative {
   position: relative;
 }
