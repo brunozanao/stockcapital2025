@@ -1545,34 +1545,13 @@
     </a>
 
     <script>
-        window.addEventListener("load", function() {
-            const hash = window.location.hash;
-            if (hash) {
-                const target = document.querySelector(hash);
-                if (target) {
-                    // Garante que a rolagem aconteça após o conteúdo ser totalmente carregado
-                    setTimeout(() => {
-                        target.scrollIntoView({ behavior: "smooth" });
-                    }, 200); // O tempo pode ser ajustado, dependendo do tempo de carregamento
-                }
-            }
-        });
-    </script>
-
-    <script>window.addEventListener("load", function () {
-        const hash = window.location.hash;
-        if (hash) {
-            // Força o recarregamento da página com o hash para garantir que o conteúdo e o CSS sejam carregados corretamente
-            window.location.href = window.location.href; 
-        }
-    });</script>
-
-    <script>
         window.addEventListener("load", function () {
-    const hash = window.location.hash;
-    if (hash) {
-        document.querySelector("link[rel='stylesheet']").disabled = false; // Força a aplicação do CSS após o carregamento
-    }
+  if (window.location.hash) {
+    // Redireciona a página para a mesma URL sem o hash para forçar o recarregamento completo
+    setTimeout(function () {
+      window.location.href = window.location.href.split('#')[0];
+    }, 100);
+  }
 });
     </script>
 
