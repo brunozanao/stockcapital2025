@@ -26,4 +26,14 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieBanner.style.display = 'none'; // Oculta o banner
         alert('Cookies recusados!'); // Alerta opcional para confirmação
     });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
 });
