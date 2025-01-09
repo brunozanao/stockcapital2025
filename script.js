@@ -26,8 +26,4 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieBanner.style.display = 'none'; // Oculta o banner
         alert('Cookies recusados!'); // Alerta opcional para confirmação
     });
-    document.querySelector('a[href="#equipept"]').addEventListener('click', function (e) {
-        e.preventDefault();
-        window.location.href = this.href; // Redireciona para a página com a âncora
-    });
 });
