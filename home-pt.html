@@ -1546,12 +1546,12 @@
 
     <script>
         window.addEventListener("load", function () {
-  if (window.location.hash) {
-    // Redireciona a página para a mesma URL sem o hash para forçar o recarregamento completo
-    setTimeout(function () {
-      window.location.href = window.location.href.split('#')[0];
-    }, 100);
-  }
+    if (window.location.hash) {
+        const cssLink = document.createElement("link");
+        cssLink.rel = "stylesheet";
+        cssLink.href = "/path/to/styles.css"; // Caminho para o CSS
+        document.head.appendChild(cssLink);
+    }
 });
     </script>
 
