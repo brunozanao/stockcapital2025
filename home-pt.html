@@ -1557,6 +1557,23 @@
         });
     </script>
 
+    <script>window.addEventListener("load", function () {
+        const hash = window.location.hash;
+        if (hash) {
+            // Força o recarregamento da página com o hash para garantir que o conteúdo e o CSS sejam carregados corretamente
+            window.location.href = window.location.href; 
+        }
+    });</script>
+
+    <script>
+        window.addEventListener("load", function () {
+    const hash = window.location.hash;
+    if (hash) {
+        document.querySelector("link[rel='stylesheet']").disabled = false; // Força a aplicação do CSS após o carregamento
+    }
+});
+    </script>
+
 
 </body>
 
