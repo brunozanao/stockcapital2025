@@ -30,5 +30,4 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         window.location.href = this.href; // Redireciona para a página com a âncora
     });
-    
 });
