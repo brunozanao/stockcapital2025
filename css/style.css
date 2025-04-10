@@ -967,10 +967,10 @@ breadcrumbs
 backgrounds
 
 ------------------------------------------- */
-.mil-dark-bg {
+.mil-dark2-bg {
   position: relative;
 }
-.mil-dark-bg:before {
+.mil-dark2-bg:before {
   content: "";
   width: 100%;
   height: 100%;
@@ -979,6 +979,28 @@ backgrounds
   z-index: 2;
   /* -webkit-backdrop-filter: invert(100%);
           backdrop-filter: invert(100%); */
+}
+.mil-dark-bg {
+  position: relative;
+}
+.mil-dark2-bg .mi-invert-fix {
+  height: 100%;
+  position: relative;
+  pointer-events: none;
+  z-index: 3;
+}
+.mil-dark2-bg .mi-invert-fix .container {
+  pointer-events: all;
+}
+.mil-dark-bg:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+  -webkit-backdrop-filter: invert(100%);
+          backdrop-filter: invert(100%);
 }
 .mil-dark-bg .mi-invert-fix {
   height: 100%;
