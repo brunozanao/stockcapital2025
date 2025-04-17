@@ -16,7 +16,8 @@
 
     <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="stylesheet" href="/styles.css"> <!-- Caminho absoluto -->
+    <link rel="stylesheet" href="/styles.css" />
+    <!-- Caminho absoluto -->
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
@@ -24,16 +25,14 @@
 </head>
 
 <body>
-
-
     <div id="cookie-banner" class="cookie-banner">
-        <p>Este site usa cookies para fornecer uma melhor experiência de usuário. Ao navegar no site, você está
-            consentindo com seu uso.</p>
+        <p>
+            Este site usa cookies para fornecer uma melhor experiência de usuário.
+            Ao navegar no site, você está consentindo com seu uso.
+        </p>
         <button id="accept-cookies">Aceitar</button>
         <button id="decline-cookies">Recusar</button>
     </div>
-
-
 
     <div class="mil-wrapper" id="top">
         <div class="mil-ball">
@@ -69,8 +68,8 @@
 
         <div class="mil-menu-frame">
             <div class="mil-frame-top">
-                <a href="https://www.stockcapital.com.br/home-pt.html" class="notranslate" translate="no" class="mil-logo"
-                    rel="noopener noreferrer" data-no-swup>STOCK CAPITAL</a>
+                <a href="https://www.stockcapital.com.br/home-pt.html" class="notranslate" translate="no"
+                    class="mil-logo" rel="noopener noreferrer" data-no-swup>STOCK CAPITAL</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -173,7 +172,7 @@
                 <option value="es">ES</option>
             </select>
         </div>
-        
+
         <style>
             .language-select-container {
                 position: fixed;
@@ -181,7 +180,7 @@
                 right: 100px;
                 z-index: 1000;
             }
-        
+
             .language-select {
                 appearance: none;
                 -webkit-appearance: none;
@@ -199,50 +198,50 @@
                 background-position: right 8px center;
                 transition: all 0.3s ease;
             }
-        
+
             .language-select:hover {
                 background-color: rgba(240, 240, 240, 0.9);
                 border-color: #ccc;
             }
-        
+
             .language-select:focus {
                 box-shadow: 0 0 5px #000;
             }
-        
+
             @media (max-width: 1200px) {
                 .language-select-container {
                     top: 30px;
                     right: 80px;
                     z-index: 1000;
                 }
-        
+
                 .language-select {
                     padding: 3px 25px 3px 8px;
                     font-size: 12px;
                     background-position: right 5px center;
                 }
             }
-        
+
             @media (max-width: 768px) {
                 .language-select-container {
                     top: 30px;
                     right: 80px;
                     z-index: 1000;
                 }
-        
+
                 .language-select {
                     padding: 3px 25px 3px 8px;
                     font-size: 12px;
                     background-position: right 5px center;
                 }
             }
-        
+
             @media (max-width: 480px) {
                 .language-select-container {
                     top: 35px;
                     right: 80px;
                 }
-        
+
                 .language-select {
                     padding: 2px 20px 2px 6px;
                     font-size: 11px;
@@ -250,38 +249,40 @@
                 }
             }
         </style>
-        
+
         <script>
-            document.getElementById('language-select').addEventListener('change', function () {
-                var selectedLanguage = this.value;
-                var currentPath = window.location.pathname;
-                var baseUrl = 'https://www.stockcapital.com.br/';
-                
-                // Determine the base filename
-                var filename = currentPath.split('/').pop();
-                
-                // Map of language-specific filenames
-                var languageMap = {
-                    'pt': 'home-pt.html',
-                    'en': '404.html',
-                    'es': 'home-es.html'
-                };
-                
-                // Redirect to the appropriate language version
-                window.location.href = baseUrl + languageMap[selectedLanguage];
-            });
-        
+            document
+                .getElementById("language-select")
+                .addEventListener("change", function () {
+                    var selectedLanguage = this.value;
+                    var currentPath = window.location.pathname;
+                    var baseUrl = "https://www.stockcapital.com.br/";
+
+                    // Determine the base filename
+                    var filename = currentPath.split("/").pop();
+
+                    // Map of language-specific filenames
+                    var languageMap = {
+                        pt: "home-pt.html",
+                        en: "404.html",
+                        es: "home-es.html",
+                    };
+
+                    // Redirect to the appropriate language version
+                    window.location.href = baseUrl + languageMap[selectedLanguage];
+                });
+
             // Set the correct option as selected based on current URL
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener("DOMContentLoaded", function () {
                 var currentPath = window.location.pathname;
-                var languageSelect = document.getElementById('language-select');
-                
-                if (currentPath.includes('404.html')) {
-                    languageSelect.value = 'en';
-                } else if (currentPath.includes('home-es.html')) {
-                    languageSelect.value = 'es';
+                var languageSelect = document.getElementById("language-select");
+
+                if (currentPath.includes("404.html")) {
+                    languageSelect.value = "en";
+                } else if (currentPath.includes("home-es.html")) {
+                    languageSelect.value = "es";
                 } else {
-                    languageSelect.value = 'pt';
+                    languageSelect.value = "pt";
                 }
             });
         </script>
@@ -290,8 +291,8 @@
 
         <div class="mil-frame">
             <div class="mil-frame-top">
-                <a href="https://www.stockcapital.com.br/home-pt.html" class="mil-logo notranslate" rel="noopener noreferrer"
-                    data-no-swup>STOCK CAPITAL</a>
+                <a href="https://www.stockcapital.com.br/home-pt.html" class="mil-logo notranslate"
+                    rel="noopener noreferrer" data-no-swup>STOCK CAPITAL</a>
                 <div class="mil-menu-btn">
                     <span></span>
                 </div>
@@ -322,7 +323,7 @@
 
                         <div class="container">
                             <div class="mil-banner-content mil-up">
-                                <h1 class="mil-muted mil-mb-60">
+                                <h1 class="mil-muted mil-mb-10">
                                     Moldando o Futuro e
                                     <span class="mil-thin">Transformando o</span><br />
                                     Mundo ao Seu Redor.
@@ -330,8 +331,8 @@
                                 <div class="row">
                                     <div class="col-md-7 col-lg-12">
                                         <h6 class="mil-light-soft mil-mb-60">
-                                            Acreditamos que o Mercado de Capitais Pode Ser Transparente, Acessível e
-                                            Sustentável.
+                                            Acreditamos que o Mercado de Capitais Pode Ser
+                                            Transparente, Acessível e Sustentável.
                                         </h6>
                                     </div>
                                 </div>
@@ -342,6 +343,10 @@
                                     <span>Crédito de Carbono</span>
                                 </a>
 
+                                <a href="#servicept" class="mil-link mil-muted mil-arrow-place">
+                                    <span>Nossas Soluções</span>
+                                  </a>
+
                                 <a href="https://www.stockcapital.com.br/sustainability-pt.html"
                                     class="mil-link mil-muted mil-arrow-place" rel="noopener noreferrer" data-no-swup>
                                     <span>Sustentabilidade</span>
@@ -350,12 +355,6 @@
                                 <a href="#" class="mil-link mil-muted mil-arrow-place">
                                     <span>Projetos Sociais</span>
                                 </a>
-
-                                <a class="mil-link mil-muted mil-arrow-place" href="https://carbonstd.com"
-                                    target="_blank" rel="noopener noreferrer" data-no-swup>
-                                    <span>Tecnologia</span>
-                                </a>
-
 
                                 <div class="mil-circle-text">
                                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
@@ -384,8 +383,7 @@
                     </div>
                 </section>
 
-
-                <section id="about">
+                <!-- <section id="about">
                     <div class="container mil-p-120-30" id="invest">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-lg-12 col-xl-12">
@@ -420,31 +418,33 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
                 <section id="about">
-                    <div class="container mil-p-60-30" id="quemsomospt">
+                    <div class="container mil-p-120-60" id="quemsomospt">
                         <div class="row justify-content-between align-items-center">
                             <div class="col-lg-12 col-xl-12">
                                 <div class="mil-mb-90">
-                                    <h2 class="mil-up mil-mb-60">
+                                    <h2 class="mil-center mil-up mil-mb-60">
                                         Quem <span class="mil-thin">Somos</span>
                                     </h2>
 
                                     <h6 class="mil-up mil-mb-30">
-                                        Somos uma empresa multinacional com operações no Brasil e na Argentina. Atuamos
-                                        no setor de desenvolvimento sustentável e preservação ambiental.
+                                        Somos uma empresa multinacional com operações no Brasil e
+                                        na Argentina. Atuamos no setor de desenvolvimento
+                                        sustentável e preservação ambiental.
                                     </h6>
 
                                     <h6 class="mil-up mil-mb-30">
-                                        Nosso objetivo é criar um impacto positivo para as futuras gerações através de
-                                        nossas ações e iniciativas. Acreditamos em um futuro mais verde e sustentável.
+                                        Nosso objetivo é criar um impacto positivo para as futuras
+                                        gerações através de nossas ações e iniciativas.
+                                        Acreditamos em um futuro mais verde e sustentável.
                                     </h6>
 
                                     <h6 class="mil-up mil-mb-30">
-                                        Nosso compromisso inclui a implementação de práticas sustentáveis em todas as
-                                        nossas atividades, com o objetivo de promover ativamente a preservação ambiental
-                                        e social.
+                                        Nosso compromisso inclui a implementação de práticas
+                                        sustentáveis em todas as nossas atividades, com o objetivo
+                                        de promover ativamente a preservação ambiental e social.
                                     </h6>
                                 </div>
                             </div>
@@ -464,27 +464,35 @@
                             <div class="row mil-services-grid m-0">
                                 <div class="col-md-6 col-lg-4 mil-services-grid-item p-0">
                                     <a href="#" class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30"><strong>Missão</strong></h5>
+                                        <h5 class="mil-muted mil-mb-30">
+                                            <strong>Missão</strong>
+                                        </h5>
                                         <h6 class="mil-light-soft mil-mb-30">
-                                            Fornecer projetos de economia de baixo carbono que geram riqueza para sua
-                                            empresa por meio de soluções financeiras transparentes e seguras.
+                                            Fornecer projetos de economia de baixo carbono que geram
+                                            riqueza para sua empresa por meio de soluções
+                                            financeiras transparentes e seguras.
                                         </h6>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 mil-services-grid-item p-0">
                                     <a href="#" class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30"><strong>Visão</strong></h5>
+                                        <h5 class="mil-muted mil-mb-30">
+                                            <strong>Visão</strong>
+                                        </h5>
                                         <h6 class="mil-light-soft mil-mb-30">
-                                            Alcançar excelência global no mercado financeiro, entregando soluções
-                                            inovadoras e sustentáveis até 2030.
+                                            Alcançar excelência global no mercado financeiro,
+                                            entregando soluções inovadoras e sustentáveis até 2030.
                                         </h6>
                                     </a>
                                 </div>
                                 <div class="col-md-6 col-lg-4 mil-services-grid-item p-0">
                                     <a href="#" class="mil-service-card-sm mil-up">
-                                        <h5 class="mil-muted mil-mb-30"><strong>Valores</strong></h5>
+                                        <h5 class="mil-muted mil-mb-30">
+                                            <strong>Valores</strong>
+                                        </h5>
                                         <h6 class="mil-light-soft mil-mb-30">
-                                            Ética, Lealdade, Transparência, Excelência, Segurança e Inovação.
+                                            Ética, Lealdade, Transparência, Excelência, Segurança e
+                                            Inovação.
                                         </h6>
                                     </a>
                                 </div>
@@ -493,7 +501,80 @@
                     </div>
                 </section>
 
-                <section class="mil-soft-bg">
+                <!-- service -->
+                <section id="servicept">
+                    <div class="container mil-p-120-60">
+                        <h2 class="mil-center mil-up mil-mb-60">
+                            Nossas<span class="mil-thin"> Soluções</span>
+                        </h2>
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 mil-relative mil-mb-90">
+
+                                <h4 class="mil-up mil-mb-30">Créditos de <span class="mil-thin">Carbono</h1>
+                                        <h6 class="mil-up mil-mb-30">• Geração e comercialização de créditos de carbono
+                                            certificados<br><br>
+                                            • Projetos desenvolvidos nos Padrões VCS e CCB Verras<br><br>
+                                            • Projetos validados e com rastreabilidade em conformidade com padrões
+                                            nacionais e internacionais<br><br>
+                                            • Projetos auditados e verificados por auditoria independente<br><br>
+                                            • Soluções personalizadas de compensação, adaptadas às necessidades dos
+                                            clientes<br><br>
+
+                                        </h6>
+                                        <div class="mil-up">
+                                            <a href="https://calendar.app.google/pjJQgvXR8bgN3xjp8"
+                                                class="mil-link mil-dark mil-arrow-place" target="_blank"
+                                                rel="noopener noreferrer" data-no-swup>
+                                                <span>Agende Uma Reunião</span>
+                                            </a>
+                                        </div>
+
+                            </div>
+                            <div class="col-lg-4 mil-relative mil-mb-90">
+
+                                <h4 class="mil-up mil-mb-30">Inventário de Gases de <span class="mil-thin">Efeito Estufa
+                                        (GHG Protocol)</h2>
+                                        <h6 class="mil-up mil-mb-30">• Diagnóstico completo das emissões (Escopos 1, 2 e
+                                            3)<br><br>
+                                            • Aplicação do GHG Protocol com precisão técnica<br><br>
+                                            • Suporte na definição de metas climáticas<br><br>
+                                            • Relatórios compatíveis com as exigências regulatórias e
+                                            voluntárias<br><br>
+
+                                        </h6>
+                                        <div class="mil-up">
+                                            <a href="https://calendar.app.google/pjJQgvXR8bgN3xjp8"
+                                                class="mil-link mil-dark mil-arrow-place" target="_blank"
+                                                rel="noopener noreferrer" data-no-swup>
+                                                <span>Agende Uma Reunião</span>
+                                            </a>
+                                        </div>
+
+                            </div>
+                            <div class="col-lg-4 mil-relative mil-mb-90">
+
+                                <h4 class="mil-up mil-mb-30">Governança <span class="mil-thin">ESG</h2>
+                                        <h6 class="mil-up mil-mb-30">• Sustentabilidade com estratégia<br><br>
+                                            • Estruturação de políticas e indicadores ESG<br><br>
+                                            • Integração de práticas ESG ao modelo de negócios<br><br>
+                                            • Apoio à tomada de decisão com foco em riscos e oportunidades
+
+                                        </h6>
+                                        <div class="mil-up">
+                                            <a href="https://calendar.app.google/pjJQgvXR8bgN3xjp8"
+                                                class="mil-link mil-dark mil-arrow-place" target="_blank"
+                                                rel="noopener noreferrer" data-no-swup>
+                                                <span>Agende Uma Reunião</span>
+                                            </a>
+                                        </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- service end -->
+
+                <!-- <section class="mil-soft-bg">
                     <div class="container mil-p-120-120">
                         <h2 class="mil-center mil-up mil-mb-60">
                             Compromissos <span class="mil-thin">Internacionais</span>
@@ -593,10 +674,13 @@
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> -->
 
                 <div class="mil-soft-bg">
                     <div class="container mil-p-0-60">
+                        <h2 class="mil-center mil-up mil-mb-60">
+                            <span class="mil-thin">Compromissos </span>Internacionais
+                        </h2>
                         <div class="swiper-container mil-infinite-show mil-up">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
@@ -634,622 +718,9 @@
                     </div>
                 </div>
 
-                <section>
-                    <div class="container mil-p-120-30">
-                        <div class="row justify-content-between align-items-center">
-                            <div class="col-lg-12">
-                                <div class="mil-mb-90">
-                                    <h2 class="mil-center mil-up mil-mb-60">
-                                        Conheça Nossa <span class="mil-thin">Equipe</span>
-                                    </h2>
-                                    <h6 class="mil-center mil-mb-30">
-                                        Nossa equipe multidisciplinar se destaca no desenvolvimento e implementação de
-                                        soluções inovadoras que protegem ecossistemas, promovem práticas sustentáveis e
-                                        reforçam nosso compromisso com um futuro sustentável.
-                                    </h6>
-                                </div>
-                            </div>
-                            <!-- Estrutura Original para Desktop -->
-                            <div class="team-desktop">
-                                <!-- Seu HTML original para os cards de equipe no desktop -->
-                                <div class="col-lg-12">
-                                    <div class="mil-team-list" id="equipept">
-                                        <div class="mil-lines-place"></div>
+                
 
-                                        <!-- First row with 3 cards -->
-                                        <div class="row mil-mb-40">
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card mil-up">
-                                                    <img src="img/faces/1.png" alt="Team member" />
-                                                    <div class="mil-description">
-                                                        <div class="mil-secrc-text">
-                                                            <h5 class="mil-muted mil-mb-5">
-                                                                <a href="https://www.linkedin.com/in/augustolubian/"
-                                                                    target="_blank" rel="noopener noreferrer"
-                                                                    data-no-swup>Augusto Lubian</a>
-                                                            </h5>
-                                                            <p class="mil-light-soft mil-mb-10">
-                                                                Presidente e CEO
-                                                            </p>
-                                                            <ul class="mil-social-icons mil-center">
-                                                                <li>
-                                                                    <a class="social-icon"
-                                                                        href="https://www.linkedin.com/in/augustolubian/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        <i class="fab fa-linkedin"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card mil-up">
-                                                    <img src="img/faces/2.png" alt="Team member" />
-                                                    <div class="mil-description">
-                                                        <div class="mil-secrc-text">
-                                                            <h5 class="mil-muted mil-mb-5">
-                                                                <a href="https://www.linkedin.com/in/axel-barrionuevo-3654b855/"
-                                                                    target="_blank" rel="noopener noreferrer"
-                                                                    data-no-swup>Axel Barrionuevo</a>
-                                                            </h5>
-                                                            <p class="mil-light-softzada mil-mb-10">
-                                                                Diretor de Operações
-                                                            </p>
-                                                            <ul class="mil-social-icons mil-center">
-                                                                <li>
-                                                                    <a class="social-icon"
-                                                                        href="https://www.linkedin.com/in/axel-barrionuevo-3654b855/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        <i class="fab fa-linkedin"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card-container">
-                                                    <div class="mil-team-card mil-up">
-                                                        <img src="img/faces/5.png" alt="Team member" />
-                                                        <div class="mil-description">
-                                                            <div class="mil-secrc-text">
-                                                                <h5 class="mil-muted mil-mb-5">
-                                                                    <a href="https://www.linkedin.com/in/igorvillelubian/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>Igor Ville</a>
-                                                                </h5>
-                                                                <p class="mil-light-soft mil-mb-10">
-                                                                    Diretor de Compliance
-                                                                </p>
-                                                                <ul class="mil-social-icons mil-center">
-                                                                    <li>
-                                                                        <a class="social-icon"
-                                                                            href="https://www.linkedin.com/in/igorvillelubian/"
-                                                                            target="_blank" rel="noopener noreferrer"
-                                                                            data-no-swup>
-                                                                            <i class="fab fa-linkedin"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- Second row with 4 cards -->
-                                        <div class="row mil-mb-40 justify-content-center move-up-desktop">
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card-container">
-
-                                                    <!-- <div class="mil-team-card mil-up">
-                                                        <img src="img/faces/3.png" alt="Team member" />
-                                                        <div class="mil-description">
-                                                            <div class="mil-secrc-text">
-                                                                <h5 class="mil-muted mil-mb-5">
-                                                                    <a href="https://www.linkedin.com/in/ronaldo-ortiz-a93509328/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>Ronaldo Ortiz</a>
-                                                                </h5>
-                                                                <p class="mil-light-softzada mil-mb-10">
-                                                                    Diretor de Crescimento
-                                                                </p>
-                                                                <ul class="mil-social-icons mil-center">
-                                                                    <li>
-                                                                        <a href="https://www.linkedin.com/in/ronaldo-ortiz-a93509328/"
-                                                                            target="_blank" rel="noopener noreferrer"
-                                                                            data-no-swup class="social-icon">
-                                                                            <i class="fab fa-linkedin"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div> -->
-
-                                                </div>
-
-                                            </div>
-                                            <!-- <div class="col-sm-4">
-                                                <div class="mil-team-card mil-up">
-                                                    <img src="img/faces/4.png" alt="Team member" />
-                                                    <div class="mil-description">
-                                                        <div class="mil-secrc-text">
-                                                            <h5 class="mil-muted mil-mb-5">
-                                                                <a href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                                                    target="_blank" rel="noopener noreferrer"
-                                                                    data-no-swup>Jehann Andrade</a>
-                                                            </h5>
-                                                            <p class="mil-light-softzada mil-mb-10">
-                                                                Diretor de Agronomia
-                                                            </p>
-                                                            <ul class="mil-social-icons mil-center">
-                                                                <li>
-                                                                    <a class="social-icon" a
-                                                                        href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        <i class="fab fa-linkedin"></i></a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Estrutura Swiper para Mobile -->
-                            <div class="team-mobile swiper-container">
-                                <div class="swiper-wrapper">
-                                    <!-- Cada membro em um swiper-slide -->
-                                    <!-- Primeiro card de membro -->
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/1.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/augustolubian/"
-                                                            target="_blank" rel="noopener noreferrer">Augusto Lubian</a>
-                                                    </h5>
-                                                    <p class="mil-light-soft mil-mb-10">Presidente e CEO</p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/augustolubian/"
-                                                                target="_blank" rel="noopener noreferrer">
-                                                                <i class="fab fa-linkedin"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/2.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/axel-barrionuevo-3654b855/"
-                                                            target="_blank" rel="noopener noreferrer" data-no-swup>Axel
-                                                            Barrionuevo</a>
-                                                    </h5>
-                                                    <p class="mil-light-softzada mil-mb-10">
-                                                        Diretor de Operações
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/axel-barrionuevo-3654b855/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/5.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/igorvillelubian/"
-                                                            target="_blank" rel="noopener noreferrer" data-no-swup>Igor
-                                                            Ville</a>
-                                                    </h5>
-                                                    <p class="mil-light-softzada mil-mb-10">
-                                                        Diretor de Compliance
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/igorvillelubian/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/3.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/ronaldo-ortiz-a93509328/"
-                                                            target="_blank" rel="noopener noreferrer"
-                                                            data-no-swup>Ronaldo Ortiz</a>
-                                                    </h5>
-                                                    <p class="mil-light-softzada mil-mb-10">
-                                                        Diretor de Crescimento
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a href="https://www.linkedin.com/in/ronaldo-ortiz-a93509328/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup
-                                                                class="social-icon">
-                                                                <i class="fab fa-linkedin"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-                                    <!-- <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/4.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                                            target="_blank" rel="noopener noreferrer"
-                                                            data-no-swup>Jehann Andrade</a>
-                                                    </h5>
-                                                    <p class="mil-light-softzada mil-mb-10">
-                                                        Diretor Financeiro
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon" a
-                                                                href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-                                    <!-- Adicione mais slides conforme necessário -->
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="container mil-p-120-30">
-                        <div class="row justify-content-between align-items-center">
-
-
-
-                            <div class="col-lg-12">
-                                <div class="mil-mb-90">
-                                    <h2 class="mil-center mil-up mil-mb-60">
-                                        Conselho <span class="mil-thin">Consultivo</span>
-                                    </h2>
-                                </div>
-                            </div>
-
-                            <!-- Estrutura Original para Desktop -->
-                            <div class="team-desktop">
-                                <!-- Seu HTML original para os cards de equipe no desktop -->
-                                <div class="col-lg-12">
-                                    <div class="mil-team-list" id="conselhoconsultivopt">
-                                        <div class="mil-lines-place"></div>
-
-                                        <div class="row mil-mb-40">
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card mil-up">
-                                                    <img src="img/faces/7.png" alt="Team member" />
-                                                    <div class="mil-description">
-                                                        <div class="mil-secrc-text">
-                                                            <h5 class="mil-muted mil-mb-5">
-                                                                <a href="https://www.linkedin.com/in/celso-c-souza-01255b52/"
-                                                                    target="_blank" rel="noopener noreferrer"
-                                                                    data-no-swup>Celso C Souza</a>
-                                                            </h5>
-                                                            <p class="mil-light-soft mil-mb-10">
-                                                                Presidente
-                                                            </p>
-                                                            <ul class="mil-social-icons mil-center">
-                                                                <li>
-                                                                    <a class="social-icon"
-                                                                        href="https://www.linkedin.com/in/celso-c-souza-01255b52/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        <i class="fab fa-linkedin"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card mil-up">
-                                                    <img src="img/faces/3.png" alt="Team member" />
-                                                    <div class="mil-description">
-                                                        <div class="mil-secrc-text">
-                                                            <h5 class="mil-muted mil-mb-5">
-                                                                <a href="https://www.linkedin.com/in/patrickasousa/"
-                                                                    target="_blank" rel="noopener noreferrer"
-                                                                    data-no-swup>Patrick Sousa</a>
-                                                            </h5>
-                                                            <p class="mil-light-soft mil-mb-10">
-                                                                Advisor
-                                                            </p>
-                                                            <ul class="mil-social-icons mil-center">
-                                                                <li>
-                                                                    <a class="social-icon"
-                                                                        href="https://www.linkedin.com/in/patrickasousa/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        <i class="fab fa-linkedin"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card-container">
-
-                                                    <div class="mil-team-card mil-up">
-                                                        <img src="img/faces/6.png" alt="Team member" />
-                                                        <div class="mil-description">
-                                                            <div class="mil-secrc-text">
-                                                                <h5 class="mil-muted mil-mb-5">
-                                                                    <a href="https://www.linkedin.com/in/albertomjunior/"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>
-                                                                        Alberto Malta
-                                                                    </a>
-                                                                </h5>
-                                                                <p class="mil-light-soft mil-mb-10">
-                                                                    Secretário
-                                                                </p>
-                                                                <ul class="mil-social-icons mil-center">
-                                                                    <li>
-                                                                        <a class="social-icon"
-                                                                            href="https://www.linkedin.com/in/albertomjunior/"
-                                                                            target="_blank" rel="noopener noreferrer"
-                                                                            data-no-swup>
-                                                                            <i class="fab fa-linkedin"></i>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- Second row with 4 cards -->
-                                        <div class="row mil-mb-40 justify-content-center move-up-desktop">
-                                            <div class="col-sm-4">
-                                                <div class="mil-team-card-container">
-
-                                                    <div class="mil-team-card mil-up">
-                                                        <img src="img/faces/8.png" alt="Team member" />
-                                                        <div class="mil-description">
-                                                            <div class="mil-secrc-text">
-                                                                <h5 class="mil-muted mil-mb-5">
-                                                                    <a href="https://www.linkedin.com/in/kaline-cassemiro-lubian//"
-                                                                        target="_blank" rel="noopener noreferrer"
-                                                                        data-no-swup>Kaline Cassemiro</a>
-                                                                </h5>
-                                                                <p class="mil-light-soft mil-mb-10">
-                                                                    Consultora
-                                                                </p>
-                                                                <ul class="mil-social-icons mil-center">
-                                                                    <li>
-                                                                        <a href="https://www.linkedin.com/in/kaline-cassemiro-lubian/"
-                                                                            target="_blank" rel="noopener noreferrer"
-                                                                            data-no-swup class="social-icon">
-                                                                            <i class="fab fa-linkedin"></i></a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <!-- <div class="mil-team-card mil-up"> -->
-                                                <!-- <img src="img/faces/4.png" alt="Team member" />
-                        <div class="mil-description">
-                            <div class="mil-secrc-text">
-                                <h5 class="mil-muted mil-mb-5">
-                                    <a href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                        target="_blank" rel="noopener noreferrer"
-                                        data-no-swup>Jehann Andrade</a>
-                                </h5>
-                                <p class="mil-link mil-light-soft mil-mb-10">
-                                    Director of Agronomy
-                                </p>
-                                <ul class="mil-social-icons mil-center">
-                                    <li>
-                                        <a class="social-icon" a
-                                            href="https://www.linkedin.com/in/jehanngrisonjdga/"
-                                            target="_blank" rel="noopener noreferrer"
-                                            data-no-swup>
-                                            <i class="fab fa-linkedin"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div> -->
-                                                <!-- </div> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Estrutura Swiper para Mobile -->
-                            <div class="team-mobile swiper-container">
-                                <div class="swiper-wrapper">
-                                    <!-- Cada membro em um swiper-slide -->
-                                    <div class="swiper-slide">
-                                        <!-- Card para o Swiper (mesmo conteúdo de membro) -->
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/7.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/celso-c-souza-01255b52/"
-                                                            target="_blank" rel="noopener noreferrer" data-no-swup>Celso
-                                                            C Souza</a>
-                                                    </h5>
-                                                    <p class="mil-light-soft mil-mb-10">
-                                                        President
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/celso-c-souza-01255b52/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/3.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/patrickasousa/"
-                                                            target="_blank" rel="noopener noreferrer"
-                                                            data-no-swup>Patrick Sousa</a>
-                                                    </h5>
-                                                    <p class="mil-light-soft mil-mb-10">
-                                                        Advisor
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/patrickasousa/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/6.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/albertomjunior/"
-                                                            target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                            Alberto Malta
-                                                        </a>
-                                                    </h5>
-                                                    <p class="mil-light-soft mil-mb-10">
-                                                        Secretary
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a class="social-icon"
-                                                                href="https://www.linkedin.com/in/albertomjunior/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup>
-                                                                <i class="fab fa-linkedin"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="mil-team-card mil-up">
-                                            <img src="img/faces/8.png" alt="Team member" />
-                                            <div class="mil-description">
-                                                <div class="mil-secrc-text">
-                                                    <h5 class="mil-muted mil-mb-5">
-                                                        <a href="https://www.linkedin.com/in/kaline-cassemiro-lubian//"
-                                                            target="_blank" rel="noopener noreferrer"
-                                                            data-no-swup>Kaline Cassemiro</a>
-                                                    </h5>
-                                                    <p class="mil-light-soft mil-mb-10">
-                                                        Advisor
-                                                    </p>
-                                                    <ul class="mil-social-icons mil-center">
-                                                        <li>
-                                                            <a href="https://www.linkedin.com/in/kaline-cassemiro-lubian/"
-                                                                target="_blank" rel="noopener noreferrer" data-no-swup
-                                                                class="social-icon">
-                                                                <i class="fab fa-linkedin"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-
-                                    </div>
-                                    <!-- Adicione mais slides conforme necessário -->
-                                </div>
-                                <div class="swiper-button-next"></div>
-                                <div class="swiper-button-prev"></div>
-                            </div>
-
-                        </div>
-                    </div>
-                </section>
-
-                <div class="mil-soft-bg">
+                <!-- <div class="mil-soft-bg">
                     <div class="container mil-p-120-120">
                         <h2 class="mil-center mil-up mil-mb-60">
                             <span class="mil-thin">Nossos </span>Parceiros
@@ -1310,7 +781,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <footer class="mil-dark-bg">
                     <div class="mi-invert-fix">
@@ -1322,8 +793,8 @@
                                     </div>
 
                                     <p class="mil-light-soft">
-                                        Transformando o mercado de capitais através de soluções sustentáveis e
-                                        inovadoras.
+                                        Transformando o mercado de capitais através de soluções
+                                        sustentáveis e inovadoras.
                                     </p>
                                 </div>
                                 <div class="col-md-7 col-lg-6">
@@ -1333,20 +804,31 @@
                                                 <ul>
                                                     <li><a href="#quemsomospt">Quem Somos</a></li>
                                                     <li><a href="#equipept">Nossa Equipe</a></li>
+                                                    <li></li>
                                                     <li>
-                                                    <li><a href="https://www.stockcapital.com.br/carboncredit-pt.html">Crédito
-                                                            de Carbono</a></li>
-                                                    <li> <a
+                                                        <a href="https://www.stockcapital.com.br/carboncredit-pt.html">Crédito
+                                                            de Carbono</a>
+                                                    </li>
+                                                    <li>
+                                                        <a
                                                             href="https://www.stockcapital.com.br/sustainability-pt.html">Sustentabilidade</a>
                                                     </li>
-                                                    <li><a href="#conselhoconsultivopt">Conselho Consultivo</a></li>
-                                                    <li><a href="https://ri.stockcapital.com.br/" target="_blank">Portal
-                                                            de RI</a></li>
+                                                    <li>
+                                                        <a href="#conselhoconsultivopt">Conselho Consultivo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://ri.stockcapital.com.br/" target="_blank">Portal
+                                                            de RI</a>
+                                                    </li>
                                                 </ul>
                                             </nav>
                                         </div>
                                         <div class="col-md-6 col-lg-5">
-                                            <img src="img/flags/Global-Compact.png" alt="global" style="width: 200px; height: 200px; object-fit: contain;">
+                                            <img src="img/flags/Global-Compact.png" alt="global" style="
+                            width: 200px;
+                            height: 200px;
+                            object-fit: contain;
+                          " />
                                         </div>
                                     </div>
                                 </div>
@@ -1505,15 +987,15 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper-container', {
-            slidesPerView: 1,  // Número de slides visíveis de acordo com o seu layout original
+        const swiper = new Swiper(".swiper-container", {
+            slidesPerView: 1, // Número de slides visíveis de acordo com o seu layout original
             spaceBetween: 10,
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                768: { slidesPerView: 1 },  // Ajuste para dispositivos móveis
+                768: { slidesPerView: 1 }, // Ajuste para dispositivos móveis
                 1024: { slidesPerView: 4 }, // Ajuste para tablets
             },
         });
@@ -1540,10 +1022,11 @@
     <!-- Cookies -->
     <script src="script.js"></script>
 
-    <a href="https://wa.me/5541987888230" target="_blank" rel="noopener noreferrer" class="whatsapp-button" data-no-swup>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+    <a href="https://wa.me/5541987888230" target="_blank" rel="noopener noreferrer" class="whatsapp-button"
+        data-no-swup>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+            class="whatsapp-icon" />
     </a>
-
 </body>
 
 </html>
