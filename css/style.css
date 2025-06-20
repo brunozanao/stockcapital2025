@@ -2864,38 +2864,21 @@ team
 .mil-team-card {
   position: relative;
   overflow: hidden;
-  padding-bottom: 100%; /* Maintain aspect ratio */
-  background-color: none;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  transition: transform 0.3s ease;  */
+  padding-bottom: 130%;
 }
-
-/* .mil-team-card:after {
+.mil-team-card:after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 4px;
   width: 0;
-  background-color:  #273860;
+  background-color: rgb(255, 152, 0);
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
-} */
-
-.mil-team-card-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
 }
-
 .mil-team-card img {
   position: absolute;
-  padding: 10px;
   top: 0;
   left: 0;
   width: 100%;
@@ -2909,42 +2892,20 @@ team
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
-
 .mil-team-card.mil-offset-card {
   -webkit-transform: translateY(60px);
   transform: translateY(60px);
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch; /* Isso vai garantir que todas as colunas fiquem com a mesma altura */
-}
-
-.col-sm-4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch; /* Garante que as colunas mantenham a altura uniforme */
-}
-
-.move-up-desktop {
-  margin-top: -150px;
-}
-
 @media screen and (max-width: 992px) {
   .mil-team-card.mil-offset-card {
     -webkit-transform: none;
     transform: none;
   }
-
-  .move-up-desktop {
-    margin-top: 0px;
-  }
 }
 .mil-team-card .mil-description {
   opacity: 0;
   text-align: center;
-  /* background-color: rgba(0, 0, 0, 0.514); */
+  background-color: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -2965,40 +2926,29 @@ team
   -webkit-transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.6s cubic-bezier(0, 0, 0.3642, 1);
 }
-
-.mil-team-card .mil-description::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.514);
-  clip-path: polygon(50% 2%, 98% 50%, 50% 98%, 2% 50%);
-  filter: blur(
-    180px
-  ); /* Ajuste a intensidade do blur para suavizar as bordas */
-}
-
 .mil-team-card .mil-description .mil-secrc-text {
   opacity: 0;
   -webkit-transform: translateY(15px);
   transform: translateY(15px);
   -webkit-transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.mil-team-card .mil-description .mil-secrc-text a {
+  color: rgb(255, 255, 255);
+  -webkit-transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
+  transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-team-card .mil-description .mil-secrc-text a:hover {
-  color: none;
+  color: rgb(255, 152, 0);
 }
 .mil-team-card:hover img {
-  top: 0;
-
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 .mil-team-card:hover:after {
   width: 100%;
-  position: relative;
 }
 .mil-team-card:hover .mil-description {
   opacity: 1;
@@ -3019,27 +2969,6 @@ team
   position: absolute;
   top: -120px;
   left: -22.5%;
-}
-
-.video-full {
-  width: 100%; /* Ocupa toda a largura disponível */
-  height: auto; /* Ajusta a altura proporcionalmente */
-  max-height: 100vh; /* Limita a altura ao tamanho da tela */
-  object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorção */
-}
-
-@media (max-width: 768px) {
-  .video-full {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.img-full {
-  width: 100%; /* Ocupa toda a largura disponível */
-  height: auto; /* Mantém a proporção original da imagem */
-  object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
-  display: block; /* Remove qualquer espaçamento extra causado por elementos inline */
 }
 
 /* -------------------------------------------
