@@ -1966,7 +1966,7 @@ banner
 ------------------------------------------- */
 .mil-banner {
   height: 100vh;
-  background-image: url("https://stockcapital.io/img/slider/2.jpg"); /* substitua pelo caminho da imagem */
+  background-image: url("../img/faces/3.jpg"); /* substitua pelo caminho da imagem */
   background-size: cover; /* cobre toda a área */
   background-position: center; /* centraliza a imagem */
   background-repeat: no-repeat; /* evita repetição da imagem */
