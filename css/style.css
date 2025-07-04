@@ -106,6 +106,27 @@ body {
   pointer-events: all;
 }
 
+.video-full {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  max-height: 100vh; /* Limita a altura ao tamanho da tela */
+  object-fit: cover; /* Garante que o vídeo preencha o espaço sem distorção */
+}
+
+@media (max-width: 768px) {
+  .video-full {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.img-full {
+  width: 100%; /* Ocupa toda a largura disponível */
+  height: auto; /* Mantém a proporção original da imagem */
+  object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
+  display: block; /* Remove qualquer espaçamento extra causado por elementos inline */
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px; /* Distância do botão em relação à parte inferior */
